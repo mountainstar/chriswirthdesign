@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Router } from 'react-router'
-import logo from './logo.svg';
+import logo from './logo.png';
 import routes from './routes';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 const history = createBrowserHistory();
 import './App.css';
+import './main.scss';
 
 
 class App extends Component {
@@ -17,11 +18,12 @@ class App extends Component {
 
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-            <Router history={history}>
-                { routes }
-            </Router>        </div>
+                   </div>
+        <Router history={history}>
+          { routes }
+        </Router>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+
         </p>
       </div>
     );

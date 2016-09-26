@@ -5,12 +5,13 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
+  padding:20px;
 }
 
 .App-header {
   background-color: #222;
   //height: 150px;
-  padding: 20px;
+  //padding: 20px;
   color: white;
 }
 
@@ -18,10 +19,10 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
+/*@keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+}*/
 nav ul {
   display: flex;
   -webkit-flex-flow: row wrap;

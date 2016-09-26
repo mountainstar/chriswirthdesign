@@ -9,7 +9,7 @@ class App extends Component {
     render(){
         return (
             <div>
-                <h1>Chris Wirth Design</h1>
+
                 <nav>
                     <ul>
                         <li><Link to="/">Home</Link></li>
