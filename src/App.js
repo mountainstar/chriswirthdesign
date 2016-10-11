@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Router } from 'react-router'
-import logo from './logo.png';
 import routes from './routes';
+import logo from './cwd_logo.png';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 const history = createBrowserHistory();
-import './App.css';
-import './main.scss';
+import './main.css';
 
 
 class App extends Component {
@@ -14,18 +13,18 @@ class App extends Component {
 
     return (
 
-      <div className="App">
+        <div className="App">
 
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-                   </div>
-        <Router history={history}>
-          { routes }
-        </Router>
-        <p className="App-intro">
+          <div className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+          </div>
+          <Router history={history}>
+            { routes }
+          </Router>
+          <p className="App-intro">
 
-        </p>
-      </div>
+          </p>
+        </div>
     );
 
   }
