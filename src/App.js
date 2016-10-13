@@ -15,16 +15,18 @@ class App extends Component {
 
         <div className="App">
 
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-          </div>
-          <Router history={history}>
-            { routes }
-          </Router>
-          <p className="App-intro">
+            <div className="App-header">
+              <img src={logo} className="App-logo" alt="logo" />
+            </div>
+          <main>
+            <Router history={history}>
+              { routes }
+            </Router>
+            <p className="App-intro">
+            </p>
+          </main>
 
-          </p>
-          <footer>This is the footer</footer>
+
         </div>
     );
 
