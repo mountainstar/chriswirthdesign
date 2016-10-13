@@ -24,6 +24,7 @@ class App extends Component {
           <p className="App-intro">
 
           </p>
+          <footer>This is the footer</footer>
         </div>
     );
 

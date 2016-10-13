@@ -1,7 +1,16 @@
 {
+
   "name": "chriswirthdesign",
   "version": "0.1.0",
   "private": true,
+  "description": "test",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/mountainstar/chriswirthdesign.git",
+    "type": "git"
+  },
+  "author": "Chris Wirth",
+  "license": "MIT",
   "devDependencies": {
     "create-react-app-sass": "^1.0.0",
     "react-scripts": "0.6.1"
@@ -15,6 +24,7 @@
     "start": "react-scripts-with-sass start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "surge"
   }
 }

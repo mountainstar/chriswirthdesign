@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import { Route, IndexRoute, Link } from 'react-router'
-
+import Home from './home'
+import About from './about'
+import Work from './work'
+import Contact from './contact'
+import NoMatch from './nomatch'
 // Main component
 class App extends Component {
     componentDidMount(){
@@ -24,57 +28,6 @@ class App extends Component {
     }
 }
 
-// Pages
-class Home extends Component {
-    render(){
-        return (
-            <div>
-                <h2>Home</h2>
-                <div>Some home page content</div>
-            </div>
-        )
-    }
-}
-class About extends Component {
-    render(){
-        return (
-            <div>
-                <h2>About</h2>
-                <div>Some about page content</div>
-            </div>
-        )
-    }
-}
-class Work extends Component {
-    render(){
-        return (
-            <div>
-                <h2>Work</h2>
-                <div>Some work page content</div>
-            </div>
-        )
-    }
-}
-class Contact extends Component {
-    render(){
-        return (
-            <div>
-                <h2>Contact</h2>
-                <div>Some contact page content</div>
-            </div>
-        )
-    }
-}
-class NoMatch extends Component {
-    render(){
-        return (
-            <div>
-                <h2>NoMatch</h2>
-                <div>404 error</div>
-            </div>
-        )
-    }
-}
 
 export default (
     <Route path="/" component={App}>
