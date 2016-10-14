@@ -15,6 +15,7 @@
     "react-scripts": "0.6.1"
   },
   "dependencies": {
+    "graphiql": "^0.7.8",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1"

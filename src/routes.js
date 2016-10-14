@@ -5,6 +5,7 @@ import About from './about'
 import Work from './work'
 import Contact from './contact'
 import NoMatch from './nomatch'
+import logo from './cwd_logo.png';
 // Main component
 class App extends Component {
     componentDidMount(){
@@ -15,13 +16,14 @@ class App extends Component {
             <div>
 
                 <nav>
+                    <Link to="/"> <img src={logo} className="App-logo" alt="logo" /></Link>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/work">Work</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
+
                 { this.props.children }
             </div>
         )
