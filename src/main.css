@@ -65,11 +65,15 @@ section {
   margin-left: 25px; }
 
 .App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #222;
   color: #fff;
-  width: 100%; }
+  width: 100%;
+  height: calc(100vw / (1920 / 330) - 10px); }
   .App-header h2 {
-    padding: 20px; }
+    max-width: 50%; }
 
 .App-intro {
   font-size: large;

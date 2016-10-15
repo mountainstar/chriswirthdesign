@@ -4,6 +4,5 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.9.0, ruby-2.0.0-p648) [gem]" level="application" />
   </component>
 </module>
