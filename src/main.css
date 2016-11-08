@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@fa-font-path :   "../font";
 #root {
   display: flex;
   min-height: 100vh;
@@ -6,6 +8,9 @@
   margin: 0px;
   background: #f5f5f5; }
 
+* {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; }
+
 body {
   margin: 0px; }
 
@@ -13,6 +18,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px; }
 
 main {
   flex: 1;
@@ -32,10 +41,17 @@ footer {
   line-height: 60px;
   color: #fff;
   position: relative;
-  margin-top: -60px; }
+  margin-top: -60px;
+  display: flex;
+  justify-content: space-around; }
   footer h1 {
     padding: 10px;
     margin: 0; }
+  footer .social {
+    margin-top: 10px; }
+    footer .social .fa {
+      font-size: 32px;
+      margin: 0px 10px; }
 
 nav {
   display: flex;
@@ -52,7 +68,21 @@ nav {
         color: #fff; }
 
 section {
-  background: #f5f5f5; }
+  background: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  section h1 {
+    width: 100%; }
+  section .row {
+    flex-wrap: wrap;
+    display: flex; }
+    section .row .col {
+      justify-content: space-around; }
+      section .row .col .box {
+        margin: 10px;
+        padding: 10px 50px;
+        background: #fefefe; }
 
 .App {
   text-align: center;
@@ -72,8 +102,10 @@ section {
   color: #fff;
   width: 100%;
   height: calc(100vw / (1920 / 330) - 10px); }
-  .App-header h2 {
-    max-width: 50%; }
+  @media (min-width: 660px) {
+    .App-header h2 {
+      font-size: 50px;
+      margin-top: 88px; } }
 
 .App-intro {
   font-size: large;

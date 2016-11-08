@@ -19,7 +19,6 @@ class App extends Component {
                     <Link to="/"> <img src={logo} className="App-logo" alt="logo" /></Link>
                     <ul>
                         <li><Link to="/about">About</Link></li>
-                        <li><Link to="/work">Work</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
