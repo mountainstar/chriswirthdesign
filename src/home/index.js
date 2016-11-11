@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
+import jQuery from 'jquery';
 import Projects from '../projects';
 import bg from '../img/blog.jpg';
-import kam from '../img/kamban.png';
-import carl from '../img/carl.png';
-import feedback from '../img/feedback.png';
-class Home extends Component {
+
+
+export default class Home extends Component {
     constructor() {
         super();
+
         this.state = {
-            projects: [
-                {id: 1, name: 'Kamban Demo', url:'http://zonked-page.surge.sh/', image: kam},
-                {id: 2, name: 'Carl Borrmann Realtor site', url:'http://test-coloradocarl.tk/', image: carl},
-                {id: 3, name: 'BrightIdeas', url:'https://feedback.brightstores.com/', image: feedback}
-            ]
+            projects: []
         };
+    }
+    componentWillMount(){
+        this._fetchProjects();
     }
 
     render() {
-        const project = this._getProjects();
+        const projects = this._getProjects();
         const style = {
             backgroundImage: 'url(' + bg + ')',
             backgroundSize: '100%'
@@ -31,25 +31,32 @@ class Home extends Component {
                     <section>
                         <div className="row">
                             <h1>Projects</h1>
-                            {project}
+                            {projects}
                         </div>
                     </section>
                 </div>
             </div>
-        )
+        );
     }
 
     _getProjects() {
         return this.state.projects.map((project) => {
-            return (
-                <Projects
-                    img={project.image}
+            return <Projects
+                    id={project.id}
+                    image={project.image}
                     url={project.url}
                     name={project.name}
                     key={project.id} />
-            );
+        });
+    }
+    _fetchProjects() {
+        jQuery.ajax({
+            method: 'GET',
+            url: 'projects.json',
+            success: (projects) => {
+                this.setState({ projects })
+            }
         });
     }
 }
 
-export default Home;

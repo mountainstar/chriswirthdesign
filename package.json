@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "graphiql": "^0.7.8",
+    "jquery": "^2.2.4",
     "react": "^15.3.2",
-    "jquery": "^2.2.2",
     "react-api": "^1.0.5",
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1"

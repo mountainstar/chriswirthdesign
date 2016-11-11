@@ -3,7 +3,9 @@ import bg from '../img/key-tech-default.jpg';
 import Fetch from 'react-fetch';
 
 class About extends Component {
-
+    onError(error){
+        console.log(error)
+    }
     render() {
 
         const style = {
@@ -11,7 +13,7 @@ class About extends Component {
             backgroundSize: '100%'
         };
         const URL = `https://api.github.com/users/mountainstar`;
-
+        const URI = `https://api.github.com/users/mountainstar/repos`
         return (
 
             <div className="container">
@@ -22,11 +24,16 @@ class About extends Component {
                     <Fetch url={URL}>
                         <TestComponent />
                     </Fetch>
+                    <Fetch url={URI}>
+                        <Test />
+                    </Fetch>
 
                 </section>
             </div>
         )
     }
+
+
 }
 class TestComponent extends Component{
     render() {
@@ -38,7 +45,18 @@ class TestComponent extends Component{
             </div>
         );
     }
-};
+}
+class Test extends Component{
+    render() {
+        let repos = this.props[0];
+        //let repo = repos.map((x) => x);
+        return (
+            <div>
+                <li>{console.log(repos)}</li>
+            </div>
+        );
+    }
+}
 
 
 export default About

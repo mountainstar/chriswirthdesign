@@ -1,18 +1,20 @@
 [
-  {"id": 1,
+  {
+    "id": 1,
     "name": "Kamban Demo",
-    "url":"http://zonked-page.surge.sh/'",
+    "url":"http://zonked-page.surge.sh",
     "image": "../img/kamban.png"
   },
   {
     "id": 2,
-    "name": "Carl Borrmann Realtor site', url:'http://test-coloradocarl.tk/",
+    "name": "Carl Borrmann Realtor site",
+    "url": "http://test-coloradocarl.tk/",
     "image": "../img/carl.png"
   },
   {
     "id": 3,
     "name": "BrightIdeas",
-    "url":"https://feedback.brightstores.com/",
+    "url": "https://feedback.brightstores.com/",
     "image": "../img/feedback.png"
   }
 ]
